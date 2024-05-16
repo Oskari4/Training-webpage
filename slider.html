@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <header>
+        <h1>SLIDERI</h1>
+    </header>
+    <nav>
+        <button class="index" id="dropbtn"><a href="index.html">Koti</a></button> <!--Koti on tässä tapauksessa index.html-->
+            <button class="galleria" id="dropbtn"><a href="galleria.html">Galleria</a></button>
+            <button class="tietoa" id="dropbtn"><a href="tietoa.html">Tietoa</a></button>
+            <button class="yhteystiedot" id="dropbtn"><a href="yhteystiedot.html">Yhteystiedot</a></button>
+            <button class="java" id="dropbtn"><a href="java.html">JAVA</a></button>
+            <button class="slider" id="dropbtn"><a href="slider.html">Slideri</a></button>
+            <button class="kello" id="dropbtn"><a href="kello.html">Kello</a></button>
+            <button class="lorem" id="dropbtn"><a href="lorem.html">Lorem Ipsum</a></button>
+        <script src="js/script3.js"></script>
+            <select class="button" id="theme_button">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="green">Green</option>
+            </select>
+    </nav>
+    <div class="slider-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3 </div>
+                <img class="slider" src="images/aurora.jpg.jpg" style="width:100%">
+            <div class="text">Yksi</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3 </div>
+                <img class="slider" src="images/iceland.jpg.jpg" style="width:100%">
+            <div class="text">Kaksi</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3 </div>
+                <img class="slider" src="images/antarctica.jpg.jpg" style="width:100%">
+            <div class="text">Kolme</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <script src="js/script2.js"></script>
+    </main>
+    
+    <footer>
+        &copy; 2023 kotisivupohja.
+    </footer>
+</body>
+</html>
